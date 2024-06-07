@@ -33,13 +33,6 @@ public class categorias extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }
 
-    void LimpiarTabla(){
-        for(int i = 0; i <= table.getRowCount(); i++){
-            modelo.removeRow(i);
-            i = i-1;
-        }
-    }    
-
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -538,7 +531,7 @@ public class categorias extends javax.swing.JFrame {
     }//GEN-LAST:event_LimpiezaButtonMouseClicked
 
     private void LacteosButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LacteosButtonMouseClicked
-        String sql = "SELECT * FROM productos WHERE tipo_producto = 'Lácteos";
+        String sql = "SELECT * FROM productos WHERE tipo_producto = 'Lácteos'";
     
     try {
         conect = con.getConnection();
